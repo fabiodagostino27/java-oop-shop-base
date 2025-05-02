@@ -23,9 +23,13 @@ public class Prodotto {
         System.out.println(price);
     }
 
-    public float getPriceWithTaxes() {    
+    public void getPriceWithTaxes() {    
         float ivaValue = price * iva / 100;
         float totalPrice = price + ivaValue;
-        return totalPrice;
+        System.out.printf("%.2f\n", totalPrice);
+    }
+
+    public void codePlusName() {
+        System.out.println(code + "-" + name);
     }
 }
