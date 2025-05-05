@@ -1,11 +1,11 @@
 package org.lessons.java.shop;
 
+import java.math.BigDecimal;
+
 public class Main {
     public static void main(String[] args) {
-        Prodotto iphone16 = new Prodotto("iPhone 16", "L'ultimo smartphone rilasciato da Apple!", 999.99f, 22);
+        Prodotto iphone16 = new Prodotto("iPhone 16", "L'ultimo smartphone rilasciato da Apple!", new BigDecimal("999.99"), new BigDecimal("22"));
         
-        iphone16.getPrice();
-        iphone16.getPriceWithTaxes();
-        iphone16.codePlusName();
+        System.out.println(iphone16.getPriceWithTaxes());
     }
 }
