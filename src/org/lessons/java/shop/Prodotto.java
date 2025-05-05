@@ -11,12 +11,18 @@ public class Prodotto {
 
     Random rand = new Random();
 
+    
     public Prodotto(String name, String description, float price, int iva) {
+        this();
         this.code = rand.nextInt(99);
         this.name = name;
         this.description = description;
         this.price = price;
         this.iva = iva;
+    }
+    
+    public Prodotto() {
+        getPriceWithTaxes();
     }
 
     public void getPrice() {
