@@ -3,11 +3,11 @@ package org.lessons.java.shop;
 import java.util.Random;
 
 public class Prodotto {
-    public int code;
-    public String name;
-    public String description;
-    public float price;
-    public int iva;
+    private int code;
+    private String name;
+    private String description;
+    private float price;
+    private int iva;
 
     Random rand = new Random();
 
